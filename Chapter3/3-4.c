@@ -11,9 +11,7 @@ void stack_push(struct node **top, int val) {
     struct node *n;
     n = (struct node *)malloc(sizeof(struct node));
     n->val = val;
-    if (*top) {
-        n->next = *top;
-    }
+    n->next = *top;
     *top = n;
 }
 
