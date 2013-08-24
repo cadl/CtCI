@@ -31,7 +31,7 @@ int queue_pop(struct queue *q) {
     n = q->head;
     tmp = n->val;
     q->head = q->head->next;
-    //free(n);
+    free(n);
     return tmp;
 }
 
